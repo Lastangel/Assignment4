@@ -1,0 +1,33 @@
+//alert("JavaScript works!");
+/*
+Clifton Abraham
+June 28, 2013
+SDI1 1306
+Assignment 4
+*/
+
+// Libary function
+var myLibary = function(){
+ var myString = function(val){
+    var phoneNumStr = "845-741-8344"
+    var n = phoneNumStr
+    if( n.length ){
+        return true;
+    } else return false
+    }
+    return{
+        "myString": myString
+    }
+    var myOtherString = function(val){
+        var emailStr = "kingpin2086@fullsail.edu"
+        var n = emailStr
+        if(n.length){
+            return true
+        } else return false 
+    }
+    }; // end of Libary
+    
+var newLib = new myLibary();
+
+
+console.log(" Is this the Pattern? " +  newLib.myString())
