@@ -13,17 +13,21 @@ var myLibary = function(){
     var n = phoneNumStr
     if( n.length ){
         return true;
+   
     } else return false
     }
-    return{
-        "myString": myString
-    }
+   
     var myOtherString = function(val){
         var emailStr = "kingpin2086@fullsail.edu"
         var n = emailStr
         if(n.length){
             return true
+       
         } else return false 
+    }
+     return{
+        "myString"     : myString,
+        "myOtherString": myOtherString
     }
     }; // end of Libary
     
@@ -31,3 +35,4 @@ var newLib = new myLibary();
 
 
 console.log(" Is this the Pattern? " +  newLib.myString())
+console.log(" Is this the Pattern? " + newLib.myOtherString())
