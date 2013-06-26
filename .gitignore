@@ -15,7 +15,7 @@ var myLibary = function(){
         return true;
    
     } else return false
-    }
+    } // end off myString function
    
     var myOtherString = function(val){
         var emailStr = "kingpin2086@fullsail.edu"
@@ -24,10 +24,25 @@ var myLibary = function(){
             return true
        
         } else return false 
+    } // end of my OtherString function
+    
+    var myNum = function(val){
+        var val =  "86"
+        if(val == 86){
+            return val
+        } else {
+            return false
+        }
+     
+     
+    
+        
     }
+    
      return{
         "myString"     : myString,
-        "myOtherString": myOtherString
+        "myOtherString": myOtherString,
+        "myNum": myNum
     }
     }; // end of Libary
     
@@ -36,3 +51,4 @@ var newLib = new myLibary();
 
 console.log(" Is this the Pattern? " +  newLib.myString())
 console.log(" Is this the Pattern? " + newLib.myOtherString())
+console.log("The number is " + newLib.myNum())
