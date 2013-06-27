@@ -34,15 +34,30 @@ var myLibary = function(){
             return false
         }
      
-     
+    } // end of myNum function
     
-        
+    var myHours = function(elapsed){
+     
+     var dateOne =  new Date("June 27, 2013") //04:45:00);
+     var dateTwo = new Date(" June 29, 2013") //06:21:00);
+     var start =  dateOne
+     var end   =  dateTwo
+     var elapsed = end - start
+     return elapsed;  
+     
+     
+     
+      
     }
     
      return{
         "myString"     : myString,
         "myOtherString": myOtherString,
-        "myNum": myNum
+        "myNum": myNum,
+        "myHours": myHours
+ 
+
+ 
     }
     }; // end of Libary
     
@@ -52,3 +67,4 @@ var newLib = new myLibary();
 console.log(" Is this the Pattern? " +  newLib.myString())
 console.log(" Is this the Pattern? " + newLib.myOtherString())
 console.log("The number is " + newLib.myNum())
+console.log(newLib.myHours())
