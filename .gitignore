@@ -8,7 +8,7 @@ Assignment 4
 
 // Libary function
 var myLibary = function(){
- var myString = function(val){
+ var myString = function(n){
     var phoneNumStr = "845-741-8344"
     var n = phoneNumStr
     if( n.length ){
@@ -17,7 +17,7 @@ var myLibary = function(){
     } else return false
     } // end off myString function
    
-    var myOtherString = function(val){
+    var myOtherString = function(n){
         var emailStr = "kingpin2086@fullsail.edu"
         var n = emailStr
         if(n.length){
@@ -57,14 +57,33 @@ var myLibary = function(){
             return true
         
         } else return false 
-    }
+    } // end of findString function
+   var getArray = function(total){
+      var games = [ 1 +
+                   " copy of Call of duty "
+                   + 5 + " Mortal Kombat's "
+                   +  " 3 "
+                   + " Street fighters "]
+      var total = 6;
+      for(var i in games) {
+         total += games[i]
+      
+      };
+      
+       return total[i]
+      
+    
+      
+
+   } // end of getArray function
     
      return{
         "myString"     : myString,
         "myOtherString": myOtherString,
         "myNum"        : myNum,
         "myHours"      : myHours,
-        "findString"   : findSrting
+        "findString"   : findSrting,
+        "getArray"     : getArray
  
 
  
@@ -79,3 +98,4 @@ console.log(" Is this the Pattern? " + newLib.myOtherString());
 console.log("The number is " + newLib.myNum());
 console.log(newLib.myHours());
 console.log(newLib.findString());
+console.log(newLib.getArray());
