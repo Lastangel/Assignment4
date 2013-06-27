@@ -38,23 +38,33 @@ var myLibary = function(){
     
     var myHours = function(elapsed){
      
-     var dateOne =  new Date("June 27, 2013") //04:45:00);
-     var dateTwo = new Date(" June 29, 2013") //06:21:00);
-     var start =  dateOne
-     var end   =  dateTwo
+     var dateOne =  new Date(" June 27, 2013 ");
+     var dateTwo =  new Date(" June 28, 2013 ");
+     var start   =  dateOne
+     var end     =  dateTwo
      var elapsed = end - start
      return elapsed;  
      
      
      
       
+    } // end of date function
+    
+    var findSrting = function(location){
+        var location = window.location.href
+        if(location.indexOf("Nice")){
+
+            return true
+        
+        } else return false 
     }
     
      return{
         "myString"     : myString,
         "myOtherString": myOtherString,
-        "myNum": myNum,
-        "myHours": myHours
+        "myNum"        : myNum,
+        "myHours"      : myHours,
+        "findString"   : findSrting
  
 
  
@@ -64,7 +74,8 @@ var myLibary = function(){
 var newLib = new myLibary();
 
 
-console.log(" Is this the Pattern? " +  newLib.myString())
-console.log(" Is this the Pattern? " + newLib.myOtherString())
-console.log("The number is " + newLib.myNum())
-console.log(newLib.myHours())
+console.log(" Is this the Pattern? " +  newLib.myString());
+console.log(" Is this the Pattern? " + newLib.myOtherString());
+console.log("The number is " + newLib.myNum());
+console.log(newLib.myHours());
+console.log(newLib.findString());
