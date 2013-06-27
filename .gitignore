@@ -14,7 +14,10 @@ var myLibary = function(){
     if( n.length ){
         return true;
    
-    } else return false
+    } else {
+      return false
+    
+    }
     } // end off myString function
    
     var myOtherString = function(n){
@@ -23,7 +26,10 @@ var myLibary = function(){
         if(n.length){
             return true
        
-        } else return false 
+        } else {
+         return false
+        
+        }
     } // end of my OtherString function
     
     var myNum = function(val){
@@ -36,7 +42,7 @@ var myLibary = function(){
      
     } // end of myNum function
     
-    var myHours = function(elapsed){
+    var myDate = function(elapsed){
      
      var dateOne =  new Date(" June 27, 2013 ");
      var dateTwo =  new Date(" June 28, 2013 ");
@@ -44,7 +50,7 @@ var myLibary = function(){
      var end     =  dateTwo
      var elapsed = end - start
      return elapsed;  
-     
+      
      
      
       
@@ -56,7 +62,9 @@ var myLibary = function(){
 
             return true
         
-        } else return false 
+        } else {
+         return false
+         }
     } // end of findString function
    var getArray = function(total){
       var games = [ 1 +
@@ -81,7 +89,7 @@ var myLibary = function(){
         "myString"     : myString,
         "myOtherString": myOtherString,
         "myNum"        : myNum,
-        "myHours"      : myHours,
+        "myDate"      : myDate,
         "findString"   : findSrting,
         "getArray"     : getArray
  
@@ -96,6 +104,6 @@ var newLib = new myLibary();
 console.log(" Is this the Pattern? " +  newLib.myString());
 console.log(" Is this the Pattern? " + newLib.myOtherString());
 console.log("The number is " + newLib.myNum());
-console.log(newLib.myHours());
+console.log(newLib.myDate());
 console.log(newLib.findString());
 console.log(newLib.getArray());
